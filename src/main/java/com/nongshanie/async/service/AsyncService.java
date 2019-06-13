@@ -20,7 +20,7 @@ public class AsyncService {
 
     private static Random random = new Random();
 
-    private static final int NUM = 150;
+    private static final int NUM = 128;
 
 
     private final AsyncTask asyncTask;
@@ -43,7 +43,7 @@ public class AsyncService {
         }
         startGate.countDown();
         endGate.await();
-        otherJob();
+        //otherJob();
         log.info("size=====================" + map.size());
     }
 
